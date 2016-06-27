@@ -1,0 +1,156 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "Resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "Define.h"
+#include <WinRes.h>
+
+#ifndef APSTUDIO_INVOKED
+#define AFX_RESOURCE_DLL
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "Resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""Define.h""\r\n"
+    "#include <WinRes.h>\r\n"
+    "\r\n"
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#define AFX_RESOURCE_DLL\r\n"
+    "#endif\r\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#include ""Resource\\\\VER.rc2""\r\r\n"
+    "\r\n"
+    "CeleScript RCDATA \r\n"
+    "BEGIN\r\n"
+    "    L""CCUI\\0\\0\\0\\0\\0\\0\\0\\0\\0\\0\\0\\0\\0\\0\\0\\0\\0\\0\\0\\0\\0\\0\\0\\0""\r\n"
+    "END\r\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_Main                ICON                    "Resource\\Main.ico"
+IDI_File                ICON                    "Resource\\Type.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// HTML
+//
+
+HELP                    HTML                    "Resource\\CeleScript.htm"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_Main DIALOGEX 0, 0, 203, 166
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_ACCEPTFILES | WS_EX_CONTEXTHELP | WS_EX_APPWINDOW
+CAPTION "CeleScript"
+FONT 9, "MS Shell Dlg", 400, 0, 0x86
+BEGIN
+    ICON            IDI_Main,IDC_Logo,9,8,20,20,SS_NOTIFY
+    LTEXT           "请输入要执行的命令或文件路径，CeleScript 解释引擎将为您执行它。",IDC_STATIC,36,7,158,20
+    LTEXT           "命令(&C):",IDC_Cmd,6,36,30,8,SS_NOTIFY
+    EDITTEXT        IDC_Path,39,35,140,12,ES_AUTOHSCROLL | ES_NOHIDESEL | ES_WANTRETURN
+    PUSHBUTTON      "...",IDC_Browse,183,35,13,12,BS_FLAT
+    DEFPUSHBUTTON   "执行(&E)",IDOK,73,62,39,14
+    PUSHBUTTON      "退出(&X)",IDCANCEL,157,62,39,14
+    LTEXT           "CeleScript",IDC_Brand,4,60,61,19,WS_DISABLED
+    EDITTEXT        IDC_Log,0,87,202,79,ES_MULTILINE | ES_AUTOVSCROLL | ES_READONLY | WS_VSCROLL | WS_HSCROLL
+    PUSHBUTTON      "关于(&A)",IDC_About,115,62,39,14
+END
+
+IDD_Dialog DIALOGEX 0, 0, 237, 154
+STYLE DS_SETFONT | DS_MODALFRAME | DS_SETFOREGROUND | DS_FIXEDSYS | DS_CENTER | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "CeleScript"
+FONT 9, "MS Shell Dlg", 400, 0, 0x0
+BEGIN
+    PUSHBUTTON      "取消",IDCANCEL,175,24,50,14
+    DEFPUSHBUTTON   "确定",IDOK,175,7,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_Filter              "所有支持的文件|*.csc;*.reg;*.inf;*.exe;*.com;*.bat;*.cmd;*.dll;*.ocx;*.ax|命令文件 (*.csc)|*.csc|注册表文件 (*.reg)|*.reg|安装信息文件 (*.inf)|*.inf|可执行文件 (*.exe;*.com)|*.exe;*.com|批处理文件 (*.bat;*.cmd)|*.bat;*.cmd|自注册组件 (*.dll;*.ocx)|*.dll;*.ocx;*.ax|所有文件 (*.*)|*.*|"
+    IDS_AppName             "CeleScript"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_Assoc               "已经把 .csc 文件类型关联到 CeleScript 命令解释引擎。\n\n您现在可以在资源管理器中直接打开 CeleScript 命令文件。"
+    IDS_UnAssoc             "已经取消 .csc 文件类型关联。"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FoundDevice         "\r\n找到设备：%s"
+    IDS_FoundDriver         "\r\n找到驱动：%s，INF 文件：%s"
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#include "Resource\\VER.rc2"
+
+
+CeleScript RCDATA 
+BEGIN
+    L"CCUI\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+END
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
